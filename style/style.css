@@ -69,6 +69,7 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 10;
 }
 
 .navContainerInner1,
@@ -208,13 +209,14 @@ header {
 
 .productCard button {
   background-color: transparent;
-  padding: 1.2em;
+  padding: 0.6em;
   width: 100%;
   border: 1px solid black;
   text-transform: uppercase;
   transition: all ease-in-out 0.2s;
   cursor: pointer;
   border-radius: 0.4em;
+  font-family: var(--font-bosetextmedium);
 }
 
 .productCard button:hover {
