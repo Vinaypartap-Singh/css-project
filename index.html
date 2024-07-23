@@ -134,8 +134,67 @@
     </section>
 
     <!-- Featured Products -->
+
     <section class="productSection">
         <h2 style="font-size: 1.5em;">Featured products</h2>
+
+        <div class="featured1">
+            <h2>Sound just got real</h2>
+            <p>Bose QuietComfort Ultra Headphones</p>
+            <p>$549.00</p>
+            <button>BUY NOW</button>
+        </div>
+
+        <div class="featured2Container">
+            <div class="featured2">
+                <h2>Feel your music more</h2>
+                <p>Bose QuietComfort Ultra Earbuds</p>
+                <p>$379.00</p>
+                <button>BUY NOW</button>
+            </div>
+            <div class="featured3">
+                <h2>Sound and Fit Shaped To You</h2>
+                <p>Bose QuietComfort® Earbuds II</p>
+                <p>$379.00</p>
+                <button>BUY NOW</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Bose Stories  -->
+
+    <section class="carousalBlogs">
+        <h2 style="font-size: 1.5em;">Bose Stories</h2>
+        <p>The people & stories that excites us.</p>
+        <div class="blogSlider">
+            <div class="blog">
+                <h2>A generation-defining album</h2>
+                <p>Bose x NME present C24: the next generation of music, featuring tracks from major up-and-comers.</p>
+                <button>Learn more</button>
+            </div>
+
+
+            <div class="blog2">
+                <h2>Coco Gauff wants to hear it all, all the time</h2>
+                <p>The tennis pro hates pausing her music.</p>
+                <button>Learn more</button>
+            </div>
+
+            <div class="blog3">
+                <h2>Unleashing the energy</h2>
+                <p>DJ & Producer John Summit on how the new Soundlink Max Speaker turns up the vibe.</p>
+                <button>Learn more</button>
+            </div>
+
+            <div class="blog4">
+                <h2>Open-ear vs. in-ear headphones</h2>
+                <p>A guide to your perfect fit.</p>
+                <button>Learn more</button>
+            </div>
+        </div>
+
     </section>
 
 
@@ -193,6 +252,41 @@
                     // You can unslick at a given breakpoint now by adding:
                     // settings: "unslick"
                     // instead of a settings object
+                ]
+            })
+
+            $('.blogSlider').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
                 ]
             })
         });

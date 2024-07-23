@@ -38,12 +38,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 html,
 body {
   font-family: "BOSETEXTREGULAR", sans-serif;
   font-weight: 300;
+}
+
+button {
+  padding: 0.9em 1.8em;
+  border: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 0.4em !important;
+  font-family: var(--font-bosetextregular) !important;
 }
 
 .announcementBar {
@@ -89,6 +100,7 @@ header {
   gap: 2em;
   align-items: center;
   text-transform: uppercase;
+  font-size: 0.9em;
 }
 
 .navContainerInner2 {
@@ -132,7 +144,7 @@ header {
 }
 
 .hero button {
-  padding: 0.9em 1.4em;
+  padding: 0.9em 1.8em;
   border: none;
   font-size: 1em;
   text-transform: uppercase;
@@ -202,7 +214,7 @@ header {
 
 .productCard h6 {
   font-family: var(--font-bosetextregular);
-  font-size: 0.5em;
+  font-size: 1.3em;
   margin: 1em 0;
   line-height: 1.5em;
 }
@@ -222,4 +234,213 @@ header {
 .productCard button:hover {
   background-color: black;
   color: white;
+}
+
+/* Featured Products */
+
+.featured1 {
+  background-image: url("/assets/images/featured1.webp");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  padding: 4em 6em;
+  margin-top: 3em;
+  border-radius: 0.4em;
+}
+
+.featured1 h2 {
+  font-size: 3.8em;
+  color: white;
+  margin-top: 5em;
+}
+
+.featured1 p {
+  font-family: var(--font-bosetextregular);
+  font-size: 1.5em;
+  color: white;
+}
+
+.featured1 button {
+  margin-top: 4em;
+}
+
+.featured2Container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: start; */
+}
+
+.featured2 {
+  background-image: url("/assets/images/featured2.webp");
+  background-repeat: no-repeat;
+  /* background-position: top center; */
+  background-size: cover;
+  /* background-attachment: fixed; */
+  padding: 4em 6em;
+  margin-top: 2em;
+  border-radius: 0.4em;
+  width: 48%;
+}
+
+.featured2 h2 {
+  font-size: 3.8em;
+  color: white;
+  margin-top: 5em;
+}
+
+.featured2 p {
+  font-family: var(--font-bosetextregular);
+  font-size: 1.5em;
+  color: white;
+}
+
+.featured2 button {
+  margin-top: 4em;
+}
+
+.featured3 {
+  background-image: url("/assets/images/featured3.webp");
+  background-repeat: no-repeat;
+  /* background-position: top center; */
+  background-size: cover;
+  /* background-attachment: fixed; */
+  padding: 4em 6em;
+  margin-top: 2em;
+  border-radius: 0.4em;
+  width: 48%;
+}
+
+.featured3 h2 {
+  font-size: 3.8em;
+  color: white;
+  margin-top: 5em;
+}
+
+.featured3 p {
+  font-family: var(--font-bosetextregular);
+  font-size: 1.5em;
+  color: white;
+}
+
+.featured3 button {
+  margin-top: 4em;
+}
+
+/* Blog */
+
+.carousalBlogs {
+  max-width: 1380px;
+  margin: auto;
+  font-family: var(--font-boseheadline);
+  font-size: 2.5em;
+  margin-top: 2.6em;
+}
+
+.carousalBlogs p {
+  font-size: 0.4em;
+  font-family: var(--font-bosetextregular);
+}
+
+.blog {
+  background-image: url("/assets/images/BOSESTORIES.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  padding: 4em 6em;
+  margin-top: 3em;
+  border-radius: 0.4em;
+}
+
+.blog h2 {
+  font-size: 4.8em;
+  color: white;
+  margin-top: 5em;
+}
+
+.blog p {
+  font-family: var(--font-bosetextregular);
+  font-size: 1.5em;
+  color: white;
+}
+
+.blog button {
+  text-transform: uppercase;
+}
+
+.blog2 {
+  background-image: url("/assets/images/BOSESTORIES2.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  padding: 4em 6em;
+  margin-top: 3em;
+  border-radius: 0.4em;
+}
+
+.blog2 h2 {
+  font-size: 4.8em;
+  color: white;
+  margin-top: 5em;
+}
+
+.blog2 p {
+  font-family: var(--font-bosetextregular);
+  font-size: 1.5em;
+  color: white;
+}
+
+.blog2 button {
+  text-transform: uppercase;
+}
+
+.blog3 {
+  background-image: url("/assets/images/BOSESTORIES3.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  padding: 4em 6em;
+  margin-top: 3em;
+  border-radius: 0.4em;
+}
+
+.blog3 h2 {
+  font-size: 4.8em;
+  color: white;
+  margin-top: 5em;
+}
+
+.blog3 p {
+  font-family: var(--font-bosetextregular);
+  font-size: 1.5em;
+  color: white;
+}
+
+.blog3 button {
+  text-transform: uppercase;
+}
+
+.blog4 {
+  background-image: url("/assets/images/BOSESTORIES4.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  padding: 4em 6em;
+  margin-top: 3em;
+  border-radius: 0.4em;
+}
+
+.blog4 h2 {
+  font-size: 4.8em;
+  color: white;
+  margin-top: 5em;
+}
+
+.blog4 p {
+  font-family: var(--font-bosetextregular);
+  font-size: 1.5em;
+  color: white;
+}
+
+.blog4 button {
+  text-transform: uppercase;
 }
