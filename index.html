@@ -35,11 +35,31 @@
     <header>
         <div class="navContainerInner1">
             <nav class="nav">
-                <ul class="navList">
-                    <li class="navItem">Shop</li>
-                    <li class="navItem">Explore</li>
-                    <li class="navItem">Support</li>
-                </ul>
+                <!-- OffCanvas Menu -->
+                <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+                    <img src="./assets/images/svg/Menu.svg" alt="Hamburger ICON">
+                </button>
+
+                <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+                    aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">
+                            <img src="./assets/images/svg/Bose.svg" alt="Logo">
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navList">
+                            <li class="navItem">Shop</li>
+                            <li class="navItem">Explore</li>
+                            <li class="navItem">Support</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- OffCanvas Menu END -->
+
             </nav>
 
         </div>
