@@ -505,3 +505,7 @@ header {
 .drive button {
   text-transform: uppercase;
 }
+
+footer {
+  font-family: var(--font-bosetextmedium);
+}
