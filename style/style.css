@@ -123,4 +123,29 @@ header {
   border: none;
   font-size: 1em;
   text-transform: uppercase;
+  background-color: white;
+}
+
+.categoriesSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  position: relative;
+}
+
+.categoryItem {
+  width: 16%;
+  background-color: rgb(244, 244, 244);
+  border-radius: 5px;
+  padding: 1em;
+  text-align: center;
+  cursor: pointer;
+  font-family: "BOSETEXTMEDIUM", sans-serif;
+  margin: 2px;
+}
+
+.slick-slide {
+  margin: 6px;
 }
