@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "BOSEHEADLINE";
+  src: url("../assets/font/BoseHeadlineBlack.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BOSETEXTREGULAR";
+  src: url("../assets/font/BoseText-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BOSETEXTMEDIUM";
+  src: url("../assets/font/BoseText-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BOSETEXTBOLD";
+  src: url("../assets/font/BoseTextBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "BOSETEXTREGULAR", sans-serif;
+  font-weight: 300;
+}
+
+.announcementBar {
+  background-color: black;
+  text-align: center;
+}
+
+.announcementBar p {
+  padding: 1.2em;
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.1em 1.5em;
+}
+
+.navContainerInner1,
+.navContainerInner2,
+.navContainerInner3 {
+  width: 33%;
+}
+
+.navList {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.navContainerInner1 .nav .navList {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.navContainerInner2 {
+  display: flex;
+  justify-content: center;
+}
+
+.navContainerInner3 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.6em;
+}
+
+/* Hero Section */
+
+#hero {
+  background-image: url("../assets/images/bgHero.jpg");
+  background-repeat: no-repeat;
+  background-position: top top;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 82dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 5em 4em;
+  color: white;
+  gap: 1.2em;
+}
+
+.hero h1 {
+  font-size: 6em;
+  font-family: "BOSEHEADLINE", sans-serif;
+}
+
+.hero h3 {
+  letter-spacing: 0.1em;
+  font-size: 1.4em;
+}
+
+.hero button {
+  padding: 0.9em 1.4em;
+  border: none;
+  font-size: 1em;
+  text-transform: uppercase;
+}
