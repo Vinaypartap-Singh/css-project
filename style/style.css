@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @font-face {
   font-family: "BOSEHEADLINE";
   src: url("../assets/font/BoseHeadlineBlack.woff2") format("woff2");
@@ -31,7 +33,14 @@
   --font-bosetextregular: "BOSETEXTREGULAR", sans-serif;
   --font-bosetextmedium: "BOSETEXTMEDIUM", sans-serif;
   --font-bosetextbold: "BOSETEXTBOLD", sans-serif;
-  --lighgrey-color: rgb(244, 244, 244);
+  --font-poppins-thin: "Poppins", sans-serif;
+  --font-poppins-extralight: "Poppins", sans-serif;
+  --font-poppins-light: "Poppins", sans-serif;
+  --font-poppins-regular: "Poppins", sans-serif;
+  --font-poppins-medium: "Poppins", sans-serif;
+  --font-poppins-semibold: "Poppins", sans-serif;
+  --font-poppins-bold: "Poppins", sans-serif;
+  --lightgrey-color: rgb(244, 244, 244);
 }
 
 * {
@@ -55,6 +64,14 @@ button {
   background-color: white;
   border-radius: 0.4em !important;
   font-family: var(--font-bosetextregular) !important;
+}
+
+a {
+  color: black !important;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 /* Slick */
@@ -128,6 +145,23 @@ header {
   align-items: flex-start;
   padding: 5em 8em;
   color: black;
+  font-family: var(--font-boseheadline);
+  gap: 1.2em;
+}
+
+.dropSide3 {
+  background-image: url("../assets/images/DropdownImage2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  height: 60dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 5em 8em;
+  color: white;
   font-family: var(--font-boseheadline);
   gap: 1.2em;
 }
@@ -548,6 +582,46 @@ header {
 
 footer {
   font-family: var(--font-bosetextmedium);
+}
+
+/* Sign up PAGE FORM  */
+
+/* Main Container */
+
+#main {
+  height: 100dvh;
+  background-image: url("../assets/images/LoginBG.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.logo {
+  text-align: center;
+  padding: 2em;
+}
+
+.content h1 {
+  font-family: var(--font-bosetextbold);
+  font-size: 4.1rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+}
+
+.form {
+  background-color: white;
+  color: black;
+}
+
+.infoSection {
+  font-family: var(--font-bosetextmedium) !important;
+}
+
+.infoSection button {
+  font-family: var(--font-poppins-regular) !important;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Media Query */
