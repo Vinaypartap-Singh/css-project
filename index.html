@@ -36,7 +36,7 @@
         <div class="navContainerInner1">
             <nav class="nav">
                 <!-- OffCanvas Menu -->
-                <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="offcanvas"
+                <button class="btn btn-outline-primary-emphasis d-lg-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
                     <img src="./assets/images/svg/Menu.svg" alt="Hamburger ICON">
                 </button>
@@ -50,9 +50,40 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                             data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body position-relative">
                         <ul class="navList">
-                            <li class="navItem">Shop</li>
+                            <li class="navItem" id="dropDownBtn">
+                                Shop
+                                <ul class="dropDownInnerNav rounded" style="display: none;" id="dropDownContent">
+                                    <div class="row rounded">
+                                        <div class="col-md-6 rounded-3">
+                                            <ul class="pt-4 d-flex flex-column gap-4 pe-auto position-relative">
+                                                <li class="navItem">All Products</li>
+
+                                                <li class="navItem">New & Featured</li>
+
+                                                <li class="navItem">Headphones</li>
+
+                                                <li class="navItem">Earbuds</li>
+
+                                                <li class="navItem">Speakers</li>
+
+                                                <li class="navItem">Home Theatre</li>
+
+                                                <li class="navItem"> Portable PA</li>
+
+                                                <li class="navItem">Aviation</li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-md-6 dropSide2 rounded">
+                                            <h2>Listen with flair</h2>
+                                            <h3>New QuietComfort Headphones in limited-edition Chilled Lilac.</h3>
+                                            <button>Buy Now</button>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
                             <li class="navItem">Explore</li>
                             <li class="navItem">Support</li>
                         </ul>
@@ -68,9 +99,9 @@
         </div>
         <div class="navContainerInner3">
             <img src="./assets/images/svg/Search.svg" alt="Search">
-            <img src="./assets/images/svg/Account.svg" alt="Search">
-            <img src="./assets/images/svg/Heart.svg" alt="Search">
-            <img src="./assets/images/svg/cart.svg" alt="Search">
+            <a href="./pages/signup.html"><img src="./assets/images/svg/Account.svg" alt="Account"></a>
+            <img src="./assets/images/svg/cart.svg" alt="Cart">
+
         </div>
     </header>
 
@@ -617,6 +648,9 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
+
+
+
             $('.categoriesSection').slick({
                 dots: false,
                 infinite: true,
@@ -655,6 +689,43 @@
                 ]
             })
 
+
+            $('.dropdownSlider').slick({
+                dots: false,
+                prevArrow: false,
+                nextArrow: false,
+                infinite: true,
+                speed: 1000,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }]
+            })
+
             $('.blogSlider').slick({
                 dots: false,
                 infinite: true,
@@ -688,6 +759,11 @@
                         }
                     }
                 ]
+            })
+
+
+            $("#dropDownBtn").hover(function () {
+                $("#dropDownContent").toggleClass('d-block')
             })
         });
     </script>

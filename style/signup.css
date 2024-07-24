@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "BOSEHEADLINE";
+  src: url("../assets/font/BoseHeadlineBlack.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BOSETEXTREGULAR";
+  src: url("../assets/font/BoseText-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BOSETEXTMEDIUM";
+  src: url("../assets/font/BoseText-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BOSETEXTBOLD";
+  src: url("../assets/font/BoseTextBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-boseheadline: "BOSEHEADLINE", sans-serif;
+  --font-bosetextregular: "BOSETEXTREGULAR", sans-serif;
+  --font-bosetextmedium: "BOSETEXTMEDIUM", sans-serif;
+  --font-bosetextbold: "BOSETEXTBOLD", sans-serif;
+  --lighgrey-color: rgb(244, 244, 244);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+html,
+body {
+  font-family: "BOSETEXTREGULAR", sans-serif !important;
+  font-weight: 300;
+}
+
+button {
+  padding: 0.9em 1.8em;
+  border: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 0.4em !important;
+  font-family: var(--font-bosetextregular) !important;
+}
+
+/* Main Container */
+
+#main {
+  height: 100dvh;
+  background-image: url("../assets/images/LoginBG.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.logo {
+  text-align: center;
+  padding: 2em;
+}
+
+.content h1 {
+  font-family: var(--font-bosetextbold);
+  font-size: 4.1rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+}
+
+.form {
+  background-color: white;
+  color: black;
+}

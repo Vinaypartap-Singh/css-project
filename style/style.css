@@ -104,6 +104,46 @@ header {
 .navList {
   margin: 0 !important;
   padding: 0 !important;
+  position: relative;
+}
+
+.dropDownInnerNav {
+  position: absolute;
+  background-color: white;
+  left: 0;
+  top: 2.8em;
+  width: 97dvw;
+}
+
+.dropSide2 {
+  background-image: url("../assets/images/dropdownImage.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  height: 60dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 5em 8em;
+  color: black;
+  font-family: var(--font-boseheadline);
+  gap: 1.2em;
+}
+
+.dropSide2 h2 {
+  font-size: 4rem;
+}
+
+.dropSide2 h3 {
+  font-family: var(--font-bosetextmedium);
+  font-size: 1.2rem;
+}
+
+.dropSide2 button {
+  background-color: black;
+  color: white;
 }
 
 .navContainerInner1 .nav .navList {
